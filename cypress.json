@@ -1,0 +1,13 @@
+
+
+    {
+       
+        "env": {
+          "Staging": "https://www.flighthub.com/",
+          "QA": "https://www.google.com/",
+          "Production": "https://www.github.com/"
+        }
+    }
+   
+
+

@@ -1,0 +1,15 @@
+{
+  "name": "automationcypress",
+  "version": "1.0.0",
+  "description": "Learning cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Antara",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^4.7.0",
+    "prettier": "2.0.5"
+  }
+}
