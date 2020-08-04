@@ -32,4 +32,5 @@ cypress --> support --> commands.js : contains all the custom commands
 
 
 Reporting:
-npm run test (this test run command would generate report under cypress --> reports)
+
+npm run test (this command would generate report under cypress --> reports)
