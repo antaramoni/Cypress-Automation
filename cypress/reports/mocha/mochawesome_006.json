@@ -1,0 +1,192 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 4,
+    "passes": 2,
+    "pending": 0,
+    "failures": 2,
+    "start": "2020-08-04T22:55:55.660Z",
+    "end": "2020-08-04T22:56:00.110Z",
+    "duration": 4450,
+    "testsRegistered": 4,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "98de259a-eae1-43d6-ae0f-d0ac4510563a",
+      "title": "",
+      "fullFile": "cypress/integration/Autolearning/Home/homePageValidation.js",
+      "file": "cypress/integration/Autolearning/Home/homePageValidation.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "468a0515-b5cd-495c-b013-49521c950075",
+          "title": "Actions",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "a9aeb596-b242-4ace-8749-eb8fd64d8715",
+              "title": "Validate login using custom command",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Search flight button text validation using page objects",
+                  "fullTitle": "Actions Validate login using custom command Search flight button text validation using page objects",
+                  "timedOut": null,
+                  "duration": 2439,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "var home = new _HomePage[\"default\"]();\nhome.searchFlightButton().should('contain', 'SEARCH FLIGHTS');",
+                  "err": {
+                    "message": "TypeError: home.searchFlightButton is not a function",
+                    "estack": "TypeError: home.searchFlightButton is not a function\n    at Context.eval (https://www.flighthub.com/__cypress/tests?p=cypress/integration/Autolearning/Home/homePageValidation.js:16:12)",
+                    "diff": null
+                  },
+                  "uuid": "9c9e4560-37a7-4ac1-92e3-cb56ace6fab0",
+                  "parentUUID": "a9aeb596-b242-4ace-8749-eb8fd64d8715",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Search for a round tril flight using custom command and page objects",
+                  "fullTitle": "Actions Validate login using custom command Search for a round tril flight using custom command and page objects",
+                  "timedOut": null,
+                  "duration": 663,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.SearchRoundTripflight();",
+                  "err": {
+                    "message": "ReferenceError: HomePage is not defined",
+                    "estack": "ReferenceError: HomePage is not defined\n    at Context.eval (https://www.flighthub.com/__cypress/tests?p=cypress/support/index.js:42:20)",
+                    "diff": null
+                  },
+                  "uuid": "1ccaef03-40ed-44f5-bcfd-5bb51c723179",
+                  "parentUUID": "a9aeb596-b242-4ace-8749-eb8fd64d8715",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Validating sign-up feature using page objects",
+                  "fullTitle": "Actions Validate login using custom command Validating sign-up feature using page objects",
+                  "timedOut": null,
+                  "duration": 30,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "",
+                  "err": {},
+                  "uuid": "da3cde53-798b-469d-b1e6-d39746a4df6e",
+                  "parentUUID": "a9aeb596-b242-4ace-8749-eb8fd64d8715",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Search for a city using page objects",
+                  "fullTitle": "Actions Validate login using custom command Search for a city using page objects",
+                  "timedOut": null,
+                  "duration": 50,
+                  "state": "passed",
+                  "speed": "medium",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "",
+                  "err": {},
+                  "uuid": "12428868-6f52-43a2-a7a1-c8c60ab35da6",
+                  "parentUUID": "a9aeb596-b242-4ace-8749-eb8fd64d8715",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "da3cde53-798b-469d-b1e6-d39746a4df6e",
+                "12428868-6f52-43a2-a7a1-c8c60ab35da6"
+              ],
+              "failures": [
+                "9c9e4560-37a7-4ac1-92e3-cb56ace6fab0",
+                "1ccaef03-40ed-44f5-bcfd-5bb51c723179"
+              ],
+              "pending": [],
+              "skipped": [],
+              "duration": 3182,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

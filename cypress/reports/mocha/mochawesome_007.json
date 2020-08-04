@@ -1,0 +1,169 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 3,
+    "passes": 2,
+    "pending": 0,
+    "failures": 1,
+    "start": "2020-08-04T22:56:03.494Z",
+    "end": "2020-08-04T22:56:17.198Z",
+    "duration": 13704,
+    "testsRegistered": 3,
+    "passPercent": 66.66666666666666,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "2bc4e4a6-1fe9-4815-afbe-22db20d07aae",
+      "title": "",
+      "fullFile": "cypress/integration/Autolearning/Home/loginValidation.js",
+      "file": "cypress/integration/Autolearning/Home/loginValidation.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8db89593-79c4-451b-9fd3-8418bb2c5783",
+          "title": "Actions",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "9f7fd563-7506-4f50-a67a-ad83d5206de1",
+              "title": "Validate login using custom command",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Login successful validation using page objects",
+                  "fullTitle": "Actions Validate login using custom command Login successful validation using page objects",
+                  "timedOut": null,
+                  "duration": 1690,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "var myAccount = new _myAccountPage[\"default\"]();\nmyAccount.myAccount.loginEmail().type('antara.jb@gmail.com');\nmyAccount.loginPass().type('12345678');\nmyAccount.loginSubmit().click();\nmyAccount.loginSuccess().should('be.exist');",
+                  "err": {
+                    "message": "TypeError: Cannot read property 'loginEmail' of undefined",
+                    "estack": "TypeError: Cannot read property 'loginEmail' of undefined\n    at Context.eval (https://www.flighthub.com/__cypress/tests?p=cypress/integration/Autolearning/Home/loginValidation.js:16:27)",
+                    "diff": null
+                  },
+                  "uuid": "8f059902-309c-4c3d-94a3-92c521feece2",
+                  "parentUUID": "9f7fd563-7506-4f50-a67a-ad83d5206de1",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Login using custom command and passing raw argument data",
+                  "fullTitle": "Actions Validate login using custom command Login using custom command and passing raw argument data",
+                  "timedOut": null,
+                  "duration": 5368,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.login('antara.jb@gmail.com', '12345678');",
+                  "err": {},
+                  "uuid": "769671d7-0b76-4b44-af4b-8e145e7bb4c7",
+                  "parentUUID": "9f7fd563-7506-4f50-a67a-ad83d5206de1",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Login using custom command and read test data from json",
+                  "fullTitle": "Actions Validate login using custom command Login using custom command and read test data from json",
+                  "timedOut": null,
+                  "duration": 5296,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.fixture('FlightHub_user.json').then(function (user) {\n  var email = user.email;\n  var pass = user.password;\n  cy.login(email, pass);\n});",
+                  "err": {},
+                  "uuid": "efd5a272-c6b5-4388-afc7-68e2da4c2be2",
+                  "parentUUID": "9f7fd563-7506-4f50-a67a-ad83d5206de1",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "769671d7-0b76-4b44-af4b-8e145e7bb4c7",
+                "efd5a272-c6b5-4388-afc7-68e2da4c2be2"
+              ],
+              "failures": [
+                "8f059902-309c-4c3d-94a3-92c521feece2"
+              ],
+              "pending": [],
+              "skipped": [],
+              "duration": 12354,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

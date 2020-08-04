@@ -2,11 +2,29 @@
 
     {
        
-        "env": {
+        "env": 
+        {
           "Staging": "https://www.flighthub.com/",
           "QA": "https://www.google.com/",
           "Production": "https://www.github.com/"
+        },
+
+        "reporter": "cypress-multi-reporters",
+        "reporterOptions": 
+        {
+        "reporterEnabled": "mochawesome",
+        "mochawesomeReporterOptions": 
+        {
+            "reportDir": "cypress/reports/mocha",
+            "quite": true,
+            "overwrite": false,
+            "html": false,
+            "json": true
         }
+        }
+
+       
+   
     }
    
 

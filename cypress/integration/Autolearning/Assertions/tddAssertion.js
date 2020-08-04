@@ -14,7 +14,7 @@ describe('Validate with all TDD assertions', function()
 
 
 
-it('Validating   - USING .isOk(object/expression, [message])', function()
+it('Validating   - USING .isOk(object/expression, [message]) NOT DONE', function()
 {
  
 
@@ -28,7 +28,7 @@ it('Validating   - USING .isOk(object/expression, [message])', function()
 
 
 
-it('Validating  - Using .isNotOk(object, [message]) ', function()
+it('Validating  - Using .isNotOk(object, [message]) NOT DONE', function()
 {
     
     assert.isNotOk(false, 'It will pass')
@@ -40,7 +40,7 @@ it('Validating  - Using .isNotOk(object, [message]) ', function()
 }) 
 
 
-it('Validating  - USING  .equal(actual, expected, [message])', function()
+it('Validating  - USING  .equal(actual, expected, [message]) NOT DONE', function()
 {
 
    // assert.equal(3, 3, 'vals equal')
@@ -49,47 +49,12 @@ it('Validating  - USING  .equal(actual, expected, [message])', function()
 
    //let t = cy.get('a#btn-search-flight').invoke('text')
 
-   let t = cy.get('a#btn-search-flight').text()
+ //  let t = cy.get('a#btn-search-flight').text()
 
     assert.equal(t,'SEARCH FLIGHTS', 'Value matches')
     
 
 })   
-
-
-it('Validating  - USING ', function()
-{
-
-  
-    
-
-})  
-
-it('Validating  - USING ', function()
-{
-
-  
-    
-
-})  
-
-it('Validating  - USING ', function()
-{
-
-  
-    
-
-})  
-
-it('Validating  - USING ', function()
-{
-
-  
-    
-
-})  
-  
-
 
 
 

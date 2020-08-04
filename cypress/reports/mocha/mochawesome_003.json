@@ -1,0 +1,245 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 7,
+    "passes": 6,
+    "pending": 0,
+    "failures": 1,
+    "start": "2020-08-04T22:55:25.113Z",
+    "end": "2020-08-04T22:55:29.090Z",
+    "duration": 3977,
+    "testsRegistered": 7,
+    "passPercent": 85.71428571428571,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "7f7dcdb5-ed85-4b15-a7ec-c58fa2fa3a4f",
+      "title": "",
+      "fullFile": "cypress/integration/Autolearning/Assertions/tddAssertion.js",
+      "file": "cypress/integration/Autolearning/Assertions/tddAssertion.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "64514d11-f94a-4b6b-b6fe-74ac37a26bfe",
+          "title": "Actions",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "9b94c8c1-ca63-4193-9266-fe00af2c158b",
+              "title": "Validate with all TDD assertions",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Validating   - USING .isOk(object/expression, [message])",
+                  "fullTitle": "Actions Validate with all TDD assertions Validating   - USING .isOk(object/expression, [message])",
+                  "timedOut": null,
+                  "duration": 1913,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "//    assert.isOk('Antara', 'everything is ok')\nassert.isOk(cy.get('a#btn-search-flight').contains('SEARCH FLIGHTS'), 'Should return TRUE, SEARCH FLIGHT button text is ok');",
+                  "err": {},
+                  "uuid": "f00cdeee-f793-4fa4-a494-5b094beb59eb",
+                  "parentUUID": "9b94c8c1-ca63-4193-9266-fe00af2c158b",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Validating  - Using .isNotOk(object, [message]) ",
+                  "fullTitle": "Actions Validate with all TDD assertions Validating  - Using .isNotOk(object, [message]) ",
+                  "timedOut": null,
+                  "duration": 166,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "assert.isNotOk(false, 'It will pass'); //  assert.isNotOk(cy.get('a#btn-search-flight').contains(null), 'It should return false')",
+                  "err": {},
+                  "uuid": "5b89a9cb-1d09-4645-b59e-265f33a80a42",
+                  "parentUUID": "9b94c8c1-ca63-4193-9266-fe00af2c158b",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Validating  - USING  .equal(actual, expected, [message])",
+                  "fullTitle": "Actions Validate with all TDD assertions Validating  - USING  .equal(actual, expected, [message])",
+                  "timedOut": null,
+                  "duration": 507,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "// assert.equal(3, 3, 'vals equal')\n// let t = cy.get('a#btn-search-flight').its('text')\n//let t = cy.get('a#btn-search-flight').invoke('text')\nvar t = cy.get('a#btn-search-flight').text();\nassert.equal(t, 'SEARCH FLIGHTS', 'Value matches');",
+                  "err": {
+                    "message": "TypeError: cy.get(...).text is not a function",
+                    "estack": "TypeError: cy.get(...).text is not a function\n    at Context.eval (https://www.flighthub.com/__cypress/tests?p=cypress/integration/Autolearning/Assertions/tddAssertion.js:21:45)",
+                    "diff": null
+                  },
+                  "uuid": "27d55542-28fd-4d89-9a77-df9170aae6f4",
+                  "parentUUID": "9b94c8c1-ca63-4193-9266-fe00af2c158b",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Validating  - USING ",
+                  "fullTitle": "Actions Validate with all TDD assertions Validating  - USING ",
+                  "timedOut": null,
+                  "duration": 25,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "",
+                  "err": {},
+                  "uuid": "9a12dee5-fd8f-430a-9061-169aaa045ade",
+                  "parentUUID": "9b94c8c1-ca63-4193-9266-fe00af2c158b",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Validating  - USING ",
+                  "fullTitle": "Actions Validate with all TDD assertions Validating  - USING ",
+                  "timedOut": null,
+                  "duration": 25,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "",
+                  "err": {},
+                  "uuid": "9aa07f4d-3ae6-4061-b84d-11fb47847d71",
+                  "parentUUID": "9b94c8c1-ca63-4193-9266-fe00af2c158b",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Validating  - USING ",
+                  "fullTitle": "Actions Validate with all TDD assertions Validating  - USING ",
+                  "timedOut": null,
+                  "duration": 14,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "",
+                  "err": {},
+                  "uuid": "8b647459-825a-4c8e-ba6b-e057cc4dc3cf",
+                  "parentUUID": "9b94c8c1-ca63-4193-9266-fe00af2c158b",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Validating  - USING ",
+                  "fullTitle": "Actions Validate with all TDD assertions Validating  - USING ",
+                  "timedOut": null,
+                  "duration": 17,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "",
+                  "err": {},
+                  "uuid": "6e56c632-b927-4686-a11d-7cfaf95d40a1",
+                  "parentUUID": "9b94c8c1-ca63-4193-9266-fe00af2c158b",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "f00cdeee-f793-4fa4-a494-5b094beb59eb",
+                "5b89a9cb-1d09-4645-b59e-265f33a80a42",
+                "9a12dee5-fd8f-430a-9061-169aaa045ade",
+                "9aa07f4d-3ae6-4061-b84d-11fb47847d71",
+                "8b647459-825a-4c8e-ba6b-e057cc4dc3cf",
+                "6e56c632-b927-4686-a11d-7cfaf95d40a1"
+              ],
+              "failures": [
+                "27d55542-28fd-4d89-9a77-df9170aae6f4"
+              ],
+              "pending": [],
+              "skipped": [],
+              "duration": 2667,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}
