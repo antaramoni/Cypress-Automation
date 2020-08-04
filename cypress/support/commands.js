@@ -24,7 +24,7 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
 
-//import HomePage from "/Users/achowdhury/Documents/CypressAutoLearning/cypress/integration/Autolearning/pageObjects/homePage.js"
+ import HomePage from "/Users/achowdhury/Documents/CypressAutoLearning/cypress/integration/Autolearning/pageObjects/homePage.js"
 
 //import myAccountPage from "/Users/achowdhury/Documents/CypressAutoLearning/cypress/integration/Autolearning/pageObjects/myAccountPage.js" 
 
@@ -43,9 +43,9 @@ cy.get('#account-login-email').type(email);
 cy.get('#account-login-password').type(password);
 
 
-cy.get('.ss-form-row').eq(2).click()
+cy.get('.ss-form-row').eq(2).click();
 
-cy.get('.myaccount-trips-tabs').should('be.exist')
+cy.get('.myaccount-trips-tabs').should('be.exist');
 
 cy.wait('@myaccount').its('status').should('be', 200);
 
@@ -53,19 +53,30 @@ cy.wait('@myaccount').its('status').should('be', 200);
     
 });
 
-Cypress.Commands.add('SearchRoundTripflight', (From, To, Depart, Return, Passengers, ClassType) => {
-    
+Cypress.Commands.add('SearchRoundTripflight', (From, To) => {
+
+cy.visit('https://www.flighthub.com/')    
+
 const homeObject = new HomePage()
 
-cy.visit('https://www.flighthub.com/')
+// type the from departure place
+homeObject.FromField().type(From);
 
-const myAccount = new myAccountPage();
+// type the destination place
+homeObject.ToField().type(To);
 
-//myAccount.
+// Select a date from the Depart
+homeObject.DepartField().click();
+homeObject.SelectADepartdate().click();
 
 
-    
-   
+// Select a date from the Return field
+homeObject.ReturnField().click();
+//homeObject.SelectAReturndate().click();
+homeObject.SelectADepartdate().click();
+
+// Click the Search flight button
+homeObject.SearchFlightButton().click();
 
  
     
