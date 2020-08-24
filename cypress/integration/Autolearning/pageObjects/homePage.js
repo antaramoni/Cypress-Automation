@@ -1,31 +1,52 @@
 class homePage
 {
 
-    FromField()
-    {
+  FromField()
+  {
     
-      return cy.get('');
-    }
+      return cy.get('input[name=\'seg0_from\']');
+
+  }  
     
-    ToField()
-    {
+  ToField()
+  {
     
-      return cy.get('');
-    }
+      return cy.get('input[name=\'seg0_to\']');
+  }
     
-    DepartField()
-    {
+  DepartField()
+  {
     
-      return cy.get('');
-    }
+      return cy.get('input[name=\'seg0_date\']');
+  }
+
+  SelectADepartdate()
+  {
     
-    ReturnField()
-    {
+      return cy.get('.ui-state-default.ui-state-highlight.ui-state-active');
+  }
+
     
-      return cy.get('');
-    }
+  ReturnField()
+  {
     
+      return cy.get('input[name=\'seg1_date\']');
+  }
+
+  SelectAReturndate()
+  {
     
+      return cy.get('.ui-state-default').eq(2);
+  }
+
+
+  SearchFlightButton()
+  {
+    
+      return cy.get('a#btn-search-flight');
+  }
+    
+    /*
     PassengersField()
     {
     return cy.get('')
@@ -57,7 +78,7 @@ class homePage
       return cy.get('')
     }
     
-
+*/
 
 }
 
