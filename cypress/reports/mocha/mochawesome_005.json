@@ -1,0 +1,145 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-08-04T22:55:38.578Z",
+    "end": "2020-08-04T22:55:51.858Z",
+    "duration": 13280,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "370953c3-712c-4a42-829f-9777e7a3144c",
+      "title": "",
+      "fullFile": "cypress/integration/Autolearning/Home/customCommandUsage.js",
+      "file": "cypress/integration/Autolearning/Home/customCommandUsage.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "44ba54f4-80f9-431b-9c13-6aeec4525173",
+          "title": "Actions",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "335176bc-592f-45a9-b6ec-2de253d7ee19",
+              "title": "Validate login using custom command",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Login using custom command and passing raw argument data",
+                  "fullTitle": "Actions Validate login using custom command Login using custom command and passing raw argument data",
+                  "timedOut": null,
+                  "duration": 6744,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.login('antara.jb@gmail.com', '12345678');",
+                  "err": {},
+                  "uuid": "1ffa1a3a-e9a3-47d9-9454-3cf8f8b71309",
+                  "parentUUID": "335176bc-592f-45a9-b6ec-2de253d7ee19",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Login using custom command and read test data from json",
+                  "fullTitle": "Actions Validate login using custom command Login using custom command and read test data from json",
+                  "timedOut": null,
+                  "duration": 5161,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.fixture('FlightHub_user.json').then(function (user) {\n  var email = user.email;\n  var pass = user.password;\n  cy.login(email, pass);\n});",
+                  "err": {},
+                  "uuid": "e7185b0a-a691-4095-931a-7968a0b461dd",
+                  "parentUUID": "335176bc-592f-45a9-b6ec-2de253d7ee19",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "1ffa1a3a-e9a3-47d9-9454-3cf8f8b71309",
+                "e7185b0a-a691-4095-931a-7968a0b461dd"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 11905,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

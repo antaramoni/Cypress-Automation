@@ -1,0 +1,264 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 8,
+    "passes": 7,
+    "pending": 0,
+    "failures": 1,
+    "start": "2020-08-04T22:55:12.331Z",
+    "end": "2020-08-04T22:55:21.579Z",
+    "duration": 9248,
+    "testsRegistered": 8,
+    "passPercent": 87.5,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "705a13da-2c98-46a2-9907-d073c80d6d35",
+      "title": "",
+      "fullFile": "cypress/integration/Autolearning/Assertions/commonAssertion.js",
+      "file": "cypress/integration/Autolearning/Assertions/commonAssertion.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5723185d-df1d-4a02-9c05-774d62b1a811",
+          "title": "Actions",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "e478b214-7618-42e1-920f-60ab788c4933",
+              "title": "Validate Deals with common assertion",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Validating always 10 deals shows up on home page - Using have.length",
+                  "fullTitle": "Actions Validate Deals with common assertion Validating always 10 deals shows up on home page - Using have.length",
+                  "timedOut": null,
+                  "duration": 6354,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get('.hp-deals-table').should('have.length', 10);\ncy.get('.hp-deals-table').should('not.have.length', 5);",
+                  "err": {
+                    "message": "AssertionError: Timed out retrying: Not enough elements found. Found '7', expected '10'.",
+                    "estack": "AssertionError: Timed out retrying: Not enough elements found. Found '7', expected '10'.\n    at Context.eval (https://www.flighthub.com/__cypress/tests?p=cypress/integration/Autolearning/Assertions/commonAssertion.js:11:33)",
+                    "diff": "- 7\n+ 10\n"
+                  },
+                  "uuid": "a9981896-bd29-443c-8fb8-c462d8104ad1",
+                  "parentUUID": "e478b214-7618-42e1-920f-60ab788c4933",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Validating same grouped class and id - Using have.id and have.class ",
+                  "fullTitle": "Actions Validate Deals with common assertion Validating same grouped class and id - Using have.id and have.class ",
+                  "timedOut": null,
+                  "duration": 196,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "/*\nfind li within main_search_fares_form class\n cy.get('.main_search_fares_form').find('li').eq(0).should('have.class', 'flight_type_button_v2 flight-type-round-trip active')\n*/\ncy.get('.search_form_wrapper').should('have.id', 'search_form_flights');\ncy.get('#search_form_flights').should('have.class', 'search_form_wrapper'); // cy.get('#search_form_flights').should('not.have.class', 'search_form_wrapper');",
+                  "err": {},
+                  "uuid": "b2c3f59e-edec-443c-9c3b-9ab32370b9bd",
+                  "parentUUID": "e478b214-7618-42e1-920f-60ab788c4933",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Fetching Sign-up and Enter city text area value - Using invoke Value",
+                  "fullTitle": "Actions Validate Deals with common assertion Fetching Sign-up and Enter city text area value - Using invoke Value",
+                  "timedOut": null,
+                  "duration": 1073,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "/*\n have.value is not working\n cy.get('.newsletter-form-left').type('antara.chowdhury@gmail.com').should('have.value','antara.chowdhury@gmail.com')\n  */\ncy.get('.newsletter-form-left').click().type('antara.chowdhury@gmail.com');\ncy.wait(500);\ncy.get('input[name=\"email\"]').invoke('val').then(function (sometext) {\n  return cy.log(sometext);\n});\ncy.get('input[type=\"text\"]').invoke('val').then(function (sometext) {\n  return cy.log(sometext);\n});",
+                  "err": {},
+                  "uuid": "39e86681-d95a-4249-993d-d5638a22cc8b",
+                  "parentUUID": "e478b214-7618-42e1-920f-60ab788c4933",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Validating the SEARCH FLIGHT buttons text content - Using contain",
+                  "fullTitle": "Actions Validate Deals with common assertion Validating the SEARCH FLIGHT buttons text content - Using contain",
+                  "timedOut": null,
+                  "duration": 30,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get('a#btn-search-flight').should('contain', 'SEARCH FLIGHTS'); // cy.get('a#btn-search-flight').should('not.contain', 'SEARCH FLIGHTS')",
+                  "err": {},
+                  "uuid": "73918829-3991-4be8-8e9c-92a2a1ca877c",
+                  "parentUUID": "e478b214-7618-42e1-920f-60ab788c4933",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Validating SEARCH FLIGHT buttons is visible - Using Visibility",
+                  "fullTitle": "Actions Validate Deals with common assertion Validating SEARCH FLIGHT buttons is visible - Using Visibility",
+                  "timedOut": null,
+                  "duration": 28,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get('a#btn-search-flight').should('be.visible'); // cy.get('a#btn-search-flight').should('not.be.visible');",
+                  "err": {},
+                  "uuid": "6a7189c0-4e99-427d-a1d2-f33976e8d780",
+                  "parentUUID": "e478b214-7618-42e1-920f-60ab788c4933",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Validating all the deals exists on home page - Using Existence",
+                  "fullTitle": "Actions Validate Deals with common assertion Validating all the deals exists on home page - Using Existence",
+                  "timedOut": null,
+                  "duration": 23,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get('a#btn-search-flight').should('be.exist'); // cy.get('a#btn-search-flight').should('not.exist');",
+                  "err": {},
+                  "uuid": "8c4fe48f-3313-423a-9542-594e1a893e4b",
+                  "parentUUID": "e478b214-7618-42e1-920f-60ab788c4933",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Validating Prefer Non-Stop check box is checked on home page - Using State",
+                  "fullTitle": "Actions Validate Deals with common assertion Validating Prefer Non-Stop check box is checked on home page - Using State",
+                  "timedOut": null,
+                  "duration": 214,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get('.hp-additional-options').find('a').click();\ncy.get('input[name=\\'non_stop\\']').click().should('be.checked');",
+                  "err": {},
+                  "uuid": "a3f96781-607c-44a0-af19-5f5fa33a174f",
+                  "parentUUID": "e478b214-7618-42e1-920f-60ab788c4933",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Validating backgrouud color css and color value for SEARCH BUTTON   - Using CSS",
+                  "fullTitle": "Actions Validate Deals with common assertion Validating backgrouud color css and color value for SEARCH BUTTON   - Using CSS",
+                  "timedOut": null,
+                  "duration": 27,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get('a#btn-search-flight').should('have.css', 'background-color', 'rgb(255, 100, 50)');",
+                  "err": {},
+                  "uuid": "d5579f8f-25a0-4797-8528-d7dce69fcea8",
+                  "parentUUID": "e478b214-7618-42e1-920f-60ab788c4933",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "b2c3f59e-edec-443c-9c3b-9ab32370b9bd",
+                "39e86681-d95a-4249-993d-d5638a22cc8b",
+                "73918829-3991-4be8-8e9c-92a2a1ca877c",
+                "6a7189c0-4e99-427d-a1d2-f33976e8d780",
+                "8c4fe48f-3313-423a-9542-594e1a893e4b",
+                "a3f96781-607c-44a0-af19-5f5fa33a174f",
+                "d5579f8f-25a0-4797-8528-d7dce69fcea8"
+              ],
+              "failures": [
+                "a9981896-bd29-443c-8fb8-c462d8104ad1"
+              ],
+              "pending": [],
+              "skipped": [],
+              "duration": 7945,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

@@ -1,0 +1,173 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 3,
+    "passes": 1,
+    "pending": 0,
+    "failures": 2,
+    "start": "2020-08-04T22:54:47.405Z",
+    "end": "2020-08-04T22:54:59.896Z",
+    "duration": 12491,
+    "testsRegistered": 3,
+    "passPercent": 33.33333333333333,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "fd8dd427-9713-4913-b966-3d42c0fcc88f",
+      "title": "",
+      "fullFile": "cypress/integration/Autolearning/Assertions/basicAssertion.js",
+      "file": "cypress/integration/Autolearning/Assertions/basicAssertion.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c2ff4f04-fbfa-4138-b968-96a3d7a928cf",
+          "title": "Actions",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "9f40d877-db49-413d-9a11-1581827a579b",
+              "title": "Validate_Deals",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Validating all the deals on home page - Normal way USING get and its",
+                  "fullTitle": "Actions Validate_Deals Validating all the deals on home page - Normal way USING get and its",
+                  "timedOut": null,
+                  "duration": 6244,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get('.deals__title:visible').contains('Today\\'s Flight Deals').and('not.be.disabled');\ncy.get('.deals__title:visible').contains('Featured Offers').and('not.be.disabled');\ncy.get('.deals__title:visible').contains('Our Best Price').and('not.be.disabled');\ncy.get('.deals__title:visible').contains('Top Hotel Deals').and('not.be.disabled');\ncy.get('.deals__title:visible').contains('Top Car Deals').and('not.be.disabled'); // Using eq() indexing \ncy.get('.deals__title:visible').eq(4).contains('Top Car Deals').and('not.be.disabled'); // fetching number of deals\nvar deals_number = cy.get('.deals__title:visible').its('length');",
+                  "err": {
+                    "message": "AssertionError: Timed out retrying: Expected to find element: `4`, but never found it. Queried from element: [ <h5.deals__title>, 1 more... ]",
+                    "estack": "AssertionError: Timed out retrying: Expected to find element: `4`, but never found it. Queried from element: [ <h5.deals__title>, 1 more... ]\n    at Context.eval (https://www.cheapoair.ca/__cypress/tests?p=cypress/integration/Autolearning/Assertions/basicAssertion.js:17:39)",
+                    "diff": null
+                  },
+                  "uuid": "c0447590-5e10-4936-80cb-d5880768de00",
+                  "parentUUID": "9f40d877-db49-413d-9a11-1581827a579b",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Validating all the deals on home page - Using multiple assertion",
+                  "fullTitle": "Actions Validate_Deals Validating all the deals on home page - Using multiple assertion",
+                  "timedOut": null,
+                  "duration": 4572,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "var deal_list = ['Today\\'s Flight Deals*', 'Featured Offers*', 'Our Best Price*', 'Top Hotel Deals*', 'Top Car Deals*'];\ncy.get('.deals__title:visible').should('have.length', 5).and(function ($li) {\n  expect($li.get(1).textContent, 'deal' + 1).to.equal(deal_list[1]);\n});",
+                  "err": {
+                    "message": "AssertionError: Timed out retrying: Not enough elements found. Found '2', expected '5'.",
+                    "estack": "AssertionError: Timed out retrying: Not enough elements found. Found '2', expected '5'.\n    at Context.eval (https://www.cheapoair.ca/__cypress/tests?p=cypress/integration/Autolearning/Assertions/basicAssertion.js:23:39)",
+                    "diff": "- 2\n+ 5\n"
+                  },
+                  "uuid": "edbf6a8b-ecb0-4174-b86e-b477950da355",
+                  "parentUUID": "9f40d877-db49-413d-9a11-1581827a579b",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Validating all the deals on home page - USING find",
+                  "fullTitle": "Actions Validate_Deals Validating all the deals on home page - USING find",
+                  "timedOut": null,
+                  "duration": 50,
+                  "state": "passed",
+                  "speed": "medium",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get('.deals__title:visible').each(function ($el, index, $list) {\n  $el.find('.deals__title:visible').text().includes('Today\\'s Flight Deals', 'Featured Offers', 'Our Best Price', 'Top Hotel Deals', 'Top Car Deals');\n});",
+                  "err": {},
+                  "uuid": "265a0a2f-1e29-4cf7-8b3e-b715cd9208da",
+                  "parentUUID": "9f40d877-db49-413d-9a11-1581827a579b",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "265a0a2f-1e29-4cf7-8b3e-b715cd9208da"
+              ],
+              "failures": [
+                "c0447590-5e10-4936-80cb-d5880768de00",
+                "edbf6a8b-ecb0-4174-b86e-b477950da355"
+              ],
+              "pending": [],
+              "skipped": [],
+              "duration": 10866,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

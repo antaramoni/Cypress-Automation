@@ -1,0 +1,202 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-08-04T22:55:32.147Z",
+    "end": "2020-08-04T22:55:35.360Z",
+    "duration": 3213,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "d80f311e-14ae-436d-8be0-2d47068903c6",
+      "title": "",
+      "fullFile": "cypress/integration/Autolearning/Assertions/validateDealsJQueryLoop.js",
+      "file": "cypress/integration/Autolearning/Assertions/validateDealsJQueryLoop.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "78c08ff1-ef4d-492d-b514-b5fba17075ba",
+          "title": "Actions",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "69516763-db7e-43c7-b0ba-9c3ec9675329",
+              "title": "Validating all the deals Using jQuery loop",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Validate the deals with JQuery Loop:Today's Flight Deals*",
+                  "fullTitle": "Actions Validating all the deals Using jQuery loop Validate the deals with JQuery Loop:Today's Flight Deals*",
+                  "timedOut": null,
+                  "duration": 1859,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get(\".deals__title:visible\").should('contain', deal);",
+                  "err": {},
+                  "uuid": "ba9dd76f-cf51-482b-8c58-7667946133ca",
+                  "parentUUID": "69516763-db7e-43c7-b0ba-9c3ec9675329",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Validate the deals with JQuery Loop:Featured Offers*",
+                  "fullTitle": "Actions Validating all the deals Using jQuery loop Validate the deals with JQuery Loop:Featured Offers*",
+                  "timedOut": null,
+                  "duration": 114,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get(\".deals__title:visible\").should('contain', deal);",
+                  "err": {},
+                  "uuid": "2a6d1ebd-9bb8-4c6c-9de9-74f7e1569196",
+                  "parentUUID": "69516763-db7e-43c7-b0ba-9c3ec9675329",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Validate the deals with JQuery Loop:Our Best Price*",
+                  "fullTitle": "Actions Validating all the deals Using jQuery loop Validate the deals with JQuery Loop:Our Best Price*",
+                  "timedOut": null,
+                  "duration": 51,
+                  "state": "passed",
+                  "speed": "medium",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get(\".deals__title:visible\").should('contain', deal);",
+                  "err": {},
+                  "uuid": "ad43cf41-78c6-4243-ab62-8232eb923a27",
+                  "parentUUID": "69516763-db7e-43c7-b0ba-9c3ec9675329",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Validate the deals with JQuery Loop:Top Hotel Deals*",
+                  "fullTitle": "Actions Validating all the deals Using jQuery loop Validate the deals with JQuery Loop:Top Hotel Deals*",
+                  "timedOut": null,
+                  "duration": 56,
+                  "state": "passed",
+                  "speed": "medium",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get(\".deals__title:visible\").should('contain', deal);",
+                  "err": {},
+                  "uuid": "12a042f0-6477-48e2-9628-2b0023383d85",
+                  "parentUUID": "69516763-db7e-43c7-b0ba-9c3ec9675329",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Validate the deals with JQuery Loop:Top Car Deals*",
+                  "fullTitle": "Actions Validating all the deals Using jQuery loop Validate the deals with JQuery Loop:Top Car Deals*",
+                  "timedOut": null,
+                  "duration": 79,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get(\".deals__title:visible\").should('contain', deal);",
+                  "err": {},
+                  "uuid": "2a3ca52f-179a-42e1-8366-d0a1c1f5f4d4",
+                  "parentUUID": "69516763-db7e-43c7-b0ba-9c3ec9675329",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "ba9dd76f-cf51-482b-8c58-7667946133ca",
+                "2a6d1ebd-9bb8-4c6c-9de9-74f7e1569196",
+                "ad43cf41-78c6-4243-ab62-8232eb923a27",
+                "12a042f0-6477-48e2-9628-2b0023383d85",
+                "2a3ca52f-179a-42e1-8366-d0a1c1f5f4d4"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 2159,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}
