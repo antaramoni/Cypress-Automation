@@ -24,9 +24,10 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
 
- import HomePage from "/Users/achowdhury/Documents/CypressAutoLearning/cypress/integration/Autolearning/pageObjects/homePage.js"
+// import HomePage from "/Users/antarachowdhury/Documents/GitHub/Cypress-Automation/cypress/integration/Autolearning/pageObjects/homePage.js"
 
-//import myAccountPage from "/Users/achowdhury/Documents/CypressAutoLearning/cypress/integration/Autolearning/pageObjects/myAccountPage.js" 
+import myAccountPage from "/Users/antarachowdhury/Documents/GitHub/Cypress-Automation/cypress/integration/Autolearning/pageObjects/myAccountPage.js" 
+
 
 
 Cypress.Commands.add('login', (email, password) => {
