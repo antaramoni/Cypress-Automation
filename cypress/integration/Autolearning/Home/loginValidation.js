@@ -1,6 +1,8 @@
 /// <reference types="Cypress" />
 
-import myAccountPage from "../pageObjects/myAccountPage";
+//import myAccountPage from "../pageObjects/myAccountPage";
+
+import myAccountPage from "/Users/antarachowdhury/Documents/GitHub/Cypress-Automation/cypress/integration/Autolearning/pageObjects/myAccountPage";
 
 context("Actions", () => {
   before(() => {
@@ -8,7 +10,7 @@ context("Actions", () => {
   });
 
   describe("Validate login using custom command", function () {
-    it("Login successful validation using page objects", function () {
+     it("Login successful validation using page objects", function () {
       const myAccount = new myAccountPage();
       myAccount.myAccount.loginEmail().type("antara.jb@gmail.com");
 
@@ -17,7 +19,7 @@ context("Actions", () => {
       myAccount.loginSubmit().click();
 
       myAccount.loginSuccess().should("be.exist");
-    });
+    }); 
 
     it("Login using custom command and passing raw argument data", function () {
       cy.login("antara.jb@gmail.com", "12345678");
